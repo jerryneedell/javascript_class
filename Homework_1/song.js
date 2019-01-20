@@ -1,5 +1,5 @@
 /* Homework Assignemnt #1 for Keeping Up With the Javascripts - Part 1: ES6
-create a file name song.js  containing variable that describe a favorite song. 
+create a file name song.js  containing variables that describe a favorite song. 
 Use console.log() to print the information. 
 */
 
