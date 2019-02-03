@@ -4,11 +4,11 @@ define use cases for var,let,const
 
 var
 "var" can be used to declare variables with global or function scope.
-Care must be taken if var is used within a block as it will have full function scope.
+Care must be taken if "var" is used within a block as it will have full function scope.
 
 let
-"let" is used to declare varialbes with block scope. When used outside a function or block it is equvalent to var.
-"let" is probably the better choice in general since it can be used in place of var but provides more control over scope.
+"let" is used to declare varialbes with block scope. When used outside a function or block it is equvalent to "var".
+"let" is probably the better choice in general since it can be used in place of "var" but provides more control over scope.
 
 const
 "const" is used to declare varialbe with block scope but that cannot be changed after declaration.
