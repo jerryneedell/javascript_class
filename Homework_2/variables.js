@@ -3,16 +3,19 @@ Homework Assigment #2
 define use cases for var,let,const
 
 var
-var can be used to declare variables with global or function scope.
+"var" can be used to declare variables with global or function scope.
 Care must be taken if var is used within a block as it will have full function scope.
 
 let
-let is used to declare varialbes with block scope. When used outside a function or block it is equvalent to var.
-
+"let" is used to declare varialbes with block scope. When used outside a function or block it is equvalent to var.
+"let" is probably the better choice in general since it can be used in place of var but provides more control over scope.
 
 const
-const is used to declare varialbe with block scope but that cannot be changed after declaration.
+"const" is used to declare varialbe with block scope but that cannot be changed after declaration.
 When Arrays are declared  with const it is the Array "container" that is not changable, not the array contents.
+"const" should be used when a variable is not going to change throughout the program. It provides protection against inadvertant
+alteration of globally defined items.
+
 
 extra credit explain "hoisting"
 Hoisting is a term used to decribe how javascrpt preprocess variable declarations. They are essentially done in two parts.
@@ -20,6 +23,9 @@ First the declaration itself, then the assignment, if present. The declaration i
 as if the declaration statement were "hoisted" to the top of the function or block in which it occurs. It is important to understand
 that while the declarsion is "hoisted", the assigment is not. This can lead to confusion since a variable will be intially defined
 but but not initialized until the assigment statement is executed.
+
+Unexpected consequences of hoisting may be avoided by always declaing variable at the top of their scope.
+
 *
 /* code examples */
 /*
