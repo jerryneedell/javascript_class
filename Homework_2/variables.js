@@ -16,11 +16,11 @@ When Arrays are declared  with const it is the Array "container" that is not cha
 
 extra credit explain "hoisting"
 Hoisting is a term used to decribe how javascrpt preprocess variable declarations. They are essentially done in two parts.
-First the declaration itself, then the assigmtent, if present. The declaration is implemented a the "top" of its scope,
+First the declaration itself, then the assignment, if present. The declaration is implemented at the "top" of its scope,
 as if the declaration statement were "hoisted" to the top of the function or block in which it occurs. It is important to understand
 that while the declarsion is "hoisted", the assigment is not. This can lead to confusion since a variable will be intially defined
-but but not initialized until the assigment stametn is executed.
-*/
+but but not initialized until the assigment statement is executed.
+*
 /* code examples */
 /*
 var is used to declare a varialbe with "function" scope" or gobal scope if used outside of a function
