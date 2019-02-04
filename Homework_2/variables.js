@@ -18,13 +18,13 @@ alteration of globally defined items.
 
 
 extra credit explain "hoisting"
-Hoisting is a term used to decribe how javascrpt preprocess variable declarations. They are essentially done in two parts.
+Hoisting is a term used to decribe how javascript preprocesses variable declarations. They are essentially done in two parts.
 First the declaration itself, then the assignment, if present. The declaration is implemented at the "top" of its scope,
-as if the declaration statement were "hoisted" to the top of the function or block in which it occurs. It is important to understand
-that while the declarsion is "hoisted", the assigment is not. This can lead to confusion since a variable will be intially defined
+as if the declaration statement	 were "hoisted" to the top of the function or block in which it occurs. It is important to understand
+that while the declaration is "hoisted", the assigment is not. This can lead to confusion since a variable will be intially defined
 but but not initialized until the assigment statement is executed.
 
-Unexpected consequences of hoisting may be avoided by always declaing variable at the top of their scope.
+Unexpected consequences of hoisting may be avoided by always declaring variables at the top of their scope.
 
 *
 /* code examples */
