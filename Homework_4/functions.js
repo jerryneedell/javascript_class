@@ -47,41 +47,45 @@ function isMortal(name){
   const allMen = [ "Plato","Socrates","Eumenides","Euripedes","Harvey"];
   // initialize tests
   // here's our man
-  function isMan(name){
-    index = 0;
-    while(index < allMen.length) {
-    // if our man in the list set the test value
-      if ( name === allMen[index]){
-        console.log("Socrates is a Man");
-        console.log("All men are Mortal");
-        return true;
-      };
-      index++;
+  function isMan(inArray,name){
+    let foundIt = false;
+    inArray.forEach((entry) => {
+      if (entry === name){
+        foundIt = true;
+        console.log(name + " is a Man");
+      }
+    });
+    if(!foundIt){
+      console.log(name + " is not a Man");
     }
+    return foundIt;
   }
-  return isMan(name);
+  if(typeof(name) === "string") {
+      return isMan(allMen,name);
+  }
+  else{
+      console.log("Input: "+name+" is not a string");
+      return false;    
+  }
+
 }
-let name = "Socrates"
-if (isMortal(name)){
-    console.log("Therefore ", name, " is Mortal");
+function checkMortality(name){
+  if (isMortal(name)){
+      console.log("Therefore ", name, " is Mortal");
+  }
+  else{
+    console.log("Sorry, ",name," is not Mortal")
+  }
 }
-else{
-  console.log("Whoops ",name," is not Mortal")
-}
-name = "Fred"
-if (isMortal(name)){
-    console.log("Therefore ", name, " is Mortal");
-}
-else{
-  console.log("Whoops ",name," is not Mortal")
-}
-name = 6
-if (isMortal(name)){
-    console.log("Therefore ", name, " is Mortal");
-}
-else{
-  console.log("Whoops ",name," is not Mortal")
-}
+// use a name in the list
+checkMortality("Socrates");
+// use a name not in the list
+checkMortality("Fred");
+// use a non-string input
+checkMortality(6);
+
+
+
 
 // extra Credit
 console.log("\n*** extra credit ***\n")
