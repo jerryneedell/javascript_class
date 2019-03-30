@@ -102,11 +102,9 @@ function timeAdder(value1,label1,value2,label2){
     value3 /= 24;
     label3 = "days";
   }
-/*
   if(value3 === 1){
-    label3 = label3[0:len(label3)-2];
+    label3 = label3.substr(0,label3.length-1);
   }
-*/
   return [value3,label3];
 }
 function convertToSeconds(value,label){
@@ -172,4 +170,7 @@ console.log(timeAdder(10,"seconds",5,"minutes"));
 console.log(timeAdder(10,"minutes",5,"minutes"));
 console.log(timeAdder(10,"days",5,"hours"));
 console.log(timeAdder(10,"hours",5,"minutes"));
+console.log(timeAdder(55,"seconds",5,"seconds"));
+console.log(timeAdder(23,"hours",3660,"seconds"));
+console.log(timeAdder(55,"minutes",5,"minutes"));
 console.log(timeAdder(10,"second",5,"minutes"));
